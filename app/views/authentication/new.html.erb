@@ -1,0 +1,17 @@
+<h1>Login</h1>
+
+<p id='errors'><%= flash[:error] %></p>
+
+<%= form_tag login_url do %>
+  <div class='field'>
+    <%= label_tag :username %><br/>
+    <%= text_field_tag :username %>
+  </div>
+  <div class='field'>
+    <%= label_tag :password %><br/>
+    <%= password_field_tag :password %>
+  </div>
+  <div class='actions'>
+    <%= submit_tag 'Login' %> | <%= link_to 'Sign up', new_user_url %>
+  </div>
+<% end %>
