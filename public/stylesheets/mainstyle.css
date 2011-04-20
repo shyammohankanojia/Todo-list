@@ -89,4 +89,21 @@ h3 {
   list-style: disc;
 }
 
+.shadow {
+-moz-box-shadow:1px 1px 10px #cccccc;
+-webkit-box-shadow:1px 1px 10px #cccccc;
+box-shadow:1px 1px 10px #cccccc;
+/* For IE 8 */
+/*-ms-filter: progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=90, Color='#cccccc');*/
+/* For IE 5.5 - 7 */
+filter: progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#cccccc');
+}
+
+.task-box {
+adding:1.5em;margin-bottom:1.5em;background:#e5eCf9;
+-moz-border-radius:.3em;-webkit-border-radius:1em border-radius:.3em;
+background-color:#ffffff;
+border:2px solid #cccccc;
+padding: 5px 5px 5px 15px;
+}
 

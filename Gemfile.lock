@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/galetahub/rails-ckeditor.git
+  revision: 3ab7579688b3bf5184142cc6f1a851961bf93905
+  branch: rails3
+  specs:
+    ckeditor (3.5.2)
+      mime-types (>= 1.16)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -84,6 +92,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  ckeditor!
   rails (= 3.0.6)
   rspec-rails (>= 2.0.0.beta.22)
   sqlite3-ruby

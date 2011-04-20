@@ -2,27 +2,22 @@
 <p id='notice'><%= notice %></p>
 
 <h2>To-do</h2>
-<ul>
 <% @todo_tasks.each do |task| %>
-  <li>
-    <%= task.title %><br/>
+<div class=" task-box shadow">
+   <b> <%= task.title %></b><br/>
     <%= link_to 'Show', task %>
     <%= link_to 'Destroy', task, :confirm => 'Are you sure?', :method => :delete %>
     <%= link_to 'Done!', done_task_url(task) %>
-  </li>
+</div>
 <% end %>
-</ul>
 
 <h2>Done</h2>
-<ul>
 <% @done_tasks.each do |task| %>
-  <li>
-    <%= task.title %><br/>
+<div class=" task-box shadow">
+   <b> <%= task.title %></b><br/>
     <%= link_to 'Show', task %>
     <%= link_to 'Destroy', task, :confirm => 'Are you sure?', :method => :delete %>
-  </li>
+</div>
 <% end %>
-</ul>
-
 
 <%= link_to 'New Task', new_task_path %>

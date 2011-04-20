@@ -3,6 +3,7 @@ class Task < ActiveRecord::Base
 
   scope :todo, where(:done => false)
   scope :done, where(:done => true)
+  validates_presence_of :title
 
   def done!
     self.update_attributes :done => true
