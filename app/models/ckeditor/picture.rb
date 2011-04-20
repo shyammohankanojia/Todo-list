@@ -1,12 +1,12 @@
 class Ckeditor::Picture < Ckeditor::Asset
-  has_attachment :content_type => :image, 
-                 :storage => :file_system, :path_prefix => 'public/assets/pictures',
-                 :max_size => 2.megabytes,
-                 :size => 0.kilobytes..2000.kilobytes,
-                 :processor => 'Rmagick',
-                 :thumbnails => { :content => '575>', :thumb => '100x100!' }
-                 
-	validates_as_attachment
+##has_attachment :content_type => :image, 
+##               :storage => :file_system, :path_prefix => 'public/assets/pictures',
+##               :max_size => 2.megabytes,
+##               :size => 0.kilobytes..2000.kilobytes,
+##               :processor => 'Rmagick',
+##               :thumbnails => { :content => '575>', :thumb => '100x100!' }
+##               
+##validates_as_attachment
   
   def url_content
 	  public_filename(:content)
