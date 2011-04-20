@@ -1,10 +1,11 @@
 <h1><%= current_user.login %>'s Tasks</h1>
-<p id='notice'><%= notice %></p>
 
 <h2>To-do</h2>
 <% @todo_tasks.each do |task| %>
 <div class=" task-box shadow">
-   <b> <%= task.title %></b><br/>
+   <b> <%= task.title %></b>
+   <div style="float:right"><%= task.created_at.strftime("%d %B %Y")%></div>
+   <br/>
     <%= link_to 'Show', task %>
     <%= link_to 'Destroy', task, :confirm => 'Are you sure?', :method => :delete %>
     <%= link_to 'Done!', done_task_url(task) %>
