@@ -1,6 +1,6 @@
 class Ckeditor::AttachmentFile < Ckeditor::Asset
 #  has_attachment :storage => :file_system, :path_prefix => 'public/assets/attachments',
-                 :max_size => 10.megabytes
+#                 :max_size => 10.megabytes
   
   validates_as_attachment
   
