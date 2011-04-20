@@ -2,7 +2,7 @@ class Ckeditor::AttachmentFile < Ckeditor::Asset
 #  has_attachment :storage => :file_system, :path_prefix => 'public/assets/attachments',
 #                 :max_size => 10.megabytes
   
-  validates_as_attachment
+#validates_as_attachment
   
   # Map file extensions to mime types.
   # Thanks to bug in Flash 8 the content type is always set to application/octet-stream.
