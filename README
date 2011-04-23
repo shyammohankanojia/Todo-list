@@ -4,5 +4,6 @@ Rails v = 3.0.6
 ruby v = 1.8.7
 and sqlite3
 
-
+Demo url
+http://mytodo-list.heroku.com
 
